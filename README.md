@@ -1,11 +1,8 @@
-# pid_recognition
-
 # H1 Overview
 P&IDs are a specific type of widely used schematic diagram that show the logical connections for process facilities. They show the equipment, valves, pipes, and instruments and how they are connected. They do not convey scale, distance, oritentation or any spacial information. This project is take a P&ID in PDF form and convert it into data. It uses LLMs and more traditional ML techniques where LLMs currently don't do well. 
 This project also prioritizes local operations where possible to minimize the need to use external resources. See the sections below on Why priorizitize Local operations for more details. As of right now, the project relies on Claude Sonnet for some processing.
 
 # H2 Problem Definition
-
 The customer problem that I want to solve is what I call the handover problem, but it’s applicable in other scenarios. Imagine a process plant owner hires an engineering company to design and build a modification to their plant.
 
 As part of their work, the engineering company creates a schematic diagram (P&ID) using their own tools and data structures. It’s all completely digital. 
@@ -30,7 +27,14 @@ and any other information found in the title block in the lower right corner of 
 or other lines it is connected to. Return the data as JSON and only return JSON*
 4. Get the equipment list. Local LLMs did not reliably return this information either. As with line list, Claude Sonnet was used. *List the equipment on this P&ID with the name, description and associated metadata. Only list the primary equipment. Do not list piping, valves, instruments or information about the drawing itself. Return data as JSON*
 5. Valve List. LLMs don't do a good job at identifying all valve symbols. A ML algorithm, Yolov5, was used instead. This relies on work done previously here: https://github.com/ch-hristov/p-id-symbols. The training symbols are a generic set. If this is used commericially, you might want to retrain it using custom symbols that match the ones used on your P&IDs.
-  5.1 Run each quadrant through Yolo to detect valves, instruments, other symbols. The result is a CSV file containing the class of object, confidence percent, and coordinates of the symbol in the drawing.
+   5.1 Run each quadrant through Yolo to detect valves, instruments, other symbols. The result is a CSV file containing the class of object, confidence percent, and coordinates of the symbol in the drawing.
+   5.2 Go through the results CSV file and create an png snippet centered around each symbol.
+   5.3 Go through the CSV file again. Take each valve (and ignore the non- valve symbols) and send the png snippet to Gemma3:27B with the following prompt *Look at the valve in the center of the image. Return the valve size and valve tag number as a json string. If either value can't be found return the value as none*
+6. **TODO** Instrument list - do the same thing as with valves
+7. **TODO** Using the data gathered so far, create a DEXPI format XML file.
+
+Current side quest - see if I can recently released Hugging Face models to replace Claude.
+Other work to consider - can I train any of these models to do better?
 
 # H2 Why priorizitize Local operations
 # H3 Data Privacy/Security
