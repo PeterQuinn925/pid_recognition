@@ -1,9 +1,10 @@
-# H1 Overview
+# Overview
 P&IDs are a specific type of widely used schematic diagram that show the logical connections for process facilities. They show the equipment, valves, pipes, and instruments and how they are connected. They do not convey scale, distance, oritentation or any spacial information. This project is take a P&ID in PDF form and convert it into data. It uses LLMs and more traditional ML techniques where LLMs currently don't do well. 
-This project also prioritizes local operations where possible to minimize the need to use external resources. See the sections below on Why priorizitize Local operations for more details. As of right now, the project relies on Claude Sonnet for some processing.
-<img width="834" height="893" alt="test3_snip" src="https://github.com/user-attachments/assets/20232f94-07c2-4b39-81da-bacee5132ea1" />
+This project also prioritizes local operations where possible to minimize the need to use external resources. As of right now, the project relies on Claude Sonnet for some processing.
 
-# H2 Problem Definition
+<img width="400" height="400" alt="test3_snip" src="https://github.com/user-attachments/assets/20232f94-07c2-4b39-81da-bacee5132ea1" />
+
+## Problem Definition
 The customer problem that I want to solve is what I call the handover problem, but it’s applicable in other scenarios. Imagine a process plant owner hires an engineering company to design and build a modification to their plant.
 
 As part of their work, the engineering company creates a schematic diagram (P&ID) using their own tools and data structures. It’s all completely digital. 
@@ -16,10 +17,10 @@ Various people and standards bodies have tried to solve this problem for many, m
 
 My project is to take an arbitrary P&ID in PDF or some CAD format and, using AI/ML, create a DEXPI format XML file. Using XML is a convenient intermediate solution. Ultimately, I’d want to create the data directly into a target system. I can forsee using an agent to recreate the P&ID in the target system natively using the information pulled from the PDF. 
 
-# H1 Solution Details
-# H2 Hardware & OS
+# Solution Details
+## Hardware & OS
 This solution was developed and tested on an Alienware Aurora R16 Intel Core i7-1400Fx28 with 64GB of memory and a NVIDIA GeForce RTX 4060 Ti graphics card. OS is Ubuntu 24.04.3.
-# H2 Algorithm
+## Algorithm
 This solution is broken down into multiple steps
 1. Convert the PDF into 4 pngs, upper left, upper right, lower left, lower right. We need high resolution images and at this resolution a single png would be too big for the tools to handle.
 2. Get the drawing metadata. Using the bottom right png, read the title block data using Gemma3:27B. Prompt is *List the project name, company name, drawing (DWG) name, drawing number, location, date, revision, author, 
@@ -37,8 +38,8 @@ or other lines it is connected to. Return the data as JSON and only return JSON*
 Current side quest - see if I can recently released Hugging Face models to replace Claude.
 Other work to consider - can I train any of these models to do better?
 
-# H2 Why priorizitize Local operations
-# H3 Data Privacy/Security
+## Why priorizitize Local operations
+### Data Privacy/Security
 
 In my experience, many, if not most, operating companies regard their P&IDs as their intellectual property. The P&IDs contain details of how a plant turns raw materials into finished products and they want to keep this information confidential. This may or may not be a realistic view, but I’ve found it is a common one.
 
@@ -46,7 +47,7 @@ Secondly, many companies view their facilities as critical infrastructure. There
 
 Considering both of these, and the fact that the main LLM providers are known to store query data make potential customers for this system wary of uploading P&IDs to cloud services. It’s not an impossible barrier to overcome, but it is a barrier.
 
-# H3 Cost
+### Cost
 
 The other factor is cost. There are two aspects of costs to consider. First, it’s the cost to develop the system. I’m doing this on my own without financial backing, so I want to minimize costs. The cloud costs could be substantial and unpredictable. I prefer using local resources where I have visibility into the compute and storage costs and can keep within a budget. Some of the cloud LLM services have fixed monthly cost accounts, but the amount of work these do is subject to change, which leads me to my second point on costs.
 
