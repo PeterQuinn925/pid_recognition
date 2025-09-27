@@ -1,6 +1,7 @@
 # H1 Overview
 P&IDs are a specific type of widely used schematic diagram that show the logical connections for process facilities. They show the equipment, valves, pipes, and instruments and how they are connected. They do not convey scale, distance, oritentation or any spacial information. This project is take a P&ID in PDF form and convert it into data. It uses LLMs and more traditional ML techniques where LLMs currently don't do well. 
 This project also prioritizes local operations where possible to minimize the need to use external resources. See the sections below on Why priorizitize Local operations for more details. As of right now, the project relies on Claude Sonnet for some processing.
+<img width="834" height="893" alt="test3_snip" src="https://github.com/user-attachments/assets/20232f94-07c2-4b39-81da-bacee5132ea1" />
 
 # H2 Problem Definition
 The customer problem that I want to solve is what I call the handover problem, but it’s applicable in other scenarios. Imagine a process plant owner hires an engineering company to design and build a modification to their plant.
