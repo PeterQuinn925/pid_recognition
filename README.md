@@ -44,8 +44,7 @@ or other lines it is connected to. Return the data as JSON and only return JSON*
 TODO: write this up properly
 Ollama
 Yolov5/ultralytics (replace detect.py)
-
-
+add test drawing and results
 
 ## Why priorizitize Local operations
 ### Data Privacy/Security
