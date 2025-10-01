@@ -32,11 +32,13 @@ or other lines it is connected to. Return the data as JSON and only return JSON*
    5.1 Run each quadrant through Yolo to detect valves, instruments, other symbols. The result is a CSV file containing the class of object, confidence percent, and coordinates of the symbol in the drawing.
    5.2 Go through the results CSV file and create an png snippet centered around each symbol.
    5.3 Go through the CSV file again. Take each valve (and ignore the non- valve symbols) and send the png snippet to Gemma3:27B with the following prompt *Look at the valve in the center of the image. Return the valve size and valve tag number as a json string. If either value can't be found return the value as none*
-6. **TODO** Instrument list - do the same thing as with valves
+6. Instrument list. This uses the same code as valves with a different list of classes and a different scaling factor. Prompt: *Look at the instrument in the center of the image. The instrument tag type is the top text
+                    and the instrument number is the bottom text. Return a JSON string of top and bottom text with the keys top and bottom*
 7. **TODO** Using the data gathered so far, create a DEXPI format XML file.
 
-Current side quest - see if I can recently released Hugging Face models to replace Claude.
-Other work to consider - can I train any of these models to do better?
+## Future work
+ - See if I can train any of the LLM models to do better
+ - Are there additional options for local processing so I replace Claude Sonnet with a local LLM
 
 ## Why priorizitize Local operations
 ### Data Privacy/Security
