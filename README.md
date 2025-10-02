@@ -39,13 +39,20 @@ or other lines it is connected to. Return the data as JSON and only return JSON*
 
 ## Future work
  - See if I can train any of the LLM models to do better
- - Are there additional options for local processing so I replace Claude Sonnet with a local LLM
+ - Are there additional options for local processing so a local LLM can be used instead of Claude Sonnet
 
 ## Installation
-TODO: write this up properly
-Ollama
-Yolov5/ultralytics (replace detect.py)
-add test drawing and results
+Prerequisites
+- Install Ollama https://ollama.com/
+   - install gemma3:27b or another model that can accept PNGs as input
+- If you don't have an Anthropic API key, get one from https://console.anthropic.com/dashboard. There is a minimum credit card charge of $5.
+  - Enter your key into the 3rd cell of the notebook key="sk-ant-api03...
+- Install Yolov5 from Ultralytics following the instructions in the Jupyter Notebook [yolov5_P&IDs.ipynb](https://github.com/ch-hristov/p-id-symbols/blob/main/yolov5_p%26ids.ipynb)  in https://github.com/ch-hristov/p-id-symbols. You don't need to unzip the training files or run the training script.
+   - Replace detect.py with the version in this repo. There are minor changes
+   - Optional - test to see you can run Detect following the instructions in the notebook, or using your own P&ID in PNG format. Note that the accuracy of detection will depend on setting the size of the input drawing close to correct.
+- Run each part of the notebook in order.
+- All of the sections above the one marked **#main** are helper functions. The actual running happens in main. You will want to put in your paths and filenames there.    
+- There is a test PDF and result in Sample.PDF and Sample.XML to use for testing.
 
 ## Why priorizitize Local operations
 ### Data Privacy/Security
