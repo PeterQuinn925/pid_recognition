@@ -34,7 +34,8 @@ or other lines it is connected to. Return the data as JSON and only return JSON*
    5.3 Go through the CSV file again. Take each valve (and ignore the non- valve symbols) and send the png snippet to Gemma3:27B with the following prompt *Look at the valve in the center of the image. Return the valve size and valve tag number as a json string. If either value can't be found return the value as none*
 6. Instrument list. This uses the same code as valves with a different list of classes and a different scaling factor. Prompt: *Look at the instrument in the center of the image. The instrument tag type is the top text
                     and the instrument number is the bottom text. Return a JSON string of top and bottom text with the keys top and bottom*
-7. Python code takes the pieces and creates a DEXPI format XML file.
+   TODO: add an offset for the coordinates to take into account the file was split into quadrants
+8. Python code takes the pieces and creates a DEXPI format XML file.
 
 ## Future work
  - See if I can train any of the LLM models to do better
