@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PlantModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dexpi.org/schema/dexpi DEXPI_Proteus_v1.4.xsd" SchemaVersion="1.4">
+  <PlantInformation>
+    <PlantIdentification>
+      <ProjectIdentifier>Refinery Expansion</ProjectIdentifier>
+      <PlantIdentifier>123 Industrial Benicia, CA</PlantIdentifier>
+    </PlantIdentification>
+    <Owner>
+      <Name>Major Plant Expansion</Name>
+    </Owner>
+    <TimeStamp>
+      <DateTime>2025-10-02T00:43:58.700453Z</DateTime>
+    </TimeStamp>
+  </PlantInformation>
+  <PlantStructure>
+    <Equipment ID="EQ-00a9cabe" ComponentClass="GenericEquipment" ComponentName="E-100">
+      <Description>Reboiler</Description>
+    </Equipment>
+    <Equipment ID="EQ-5d538fbe" ComponentClass="GenericEquipment" ComponentName="T-100">
+      <Description>Fractionating Tower</Description>
+    </Equipment>
+    <Equipment ID="EQ-9301ca33" ComponentClass="GenericEquipment" ComponentName="P-100A">
+      <Description>T-100 Bottoms Pump</Description>
+    </Equipment>
+    <Equipment ID="EQ-af795848" ComponentClass="GenericEquipment" ComponentName="P-100B">
+      <Description>T-100 Bottoms Pump</Description>
+    </Equipment>
+    <PipingNetworkSegment ID="P-90b4d5e6" ComponentName="Pipe"/>
+    <PipingNetworkSegment ID="P-e3c82a32" ComponentName="Pipe"/>
+    <PipingNetworkSegment ID="P-ba5cd7be" ComponentName="Pipe"/>
+    <PipingNetworkSegment ID="P-9d45a7a5" ComponentName="Pipe"/>
+    <PipingNetworkSegment ID="P-a59fb09d" ComponentName="Pipe"/>
+    <PipingNetworkSegment ID="P-f8d05453" ComponentName="Pipe"/>
+    <PipingNetworkSegment ID="P-4c400971" ComponentName="Pipe"/>
+    <PipingNetworkSegment ID="P-507b82c2" ComponentName="Pipe"/>
+    <PipingNetworkSegment ID="P-585467fe" ComponentName="Pipe"/>
+    <PipingNetworkSegment ID="P-29f0365a" ComponentName="Pipe"/>
+    <PipingNetworkSegment ID="P-a3bfe87e" ComponentName="Pipe"/>
+    <PipingNetworkSegment ID="P-e5f4e40b" ComponentName="Pipe"/>
+    <PipingNetworkSegment ID="P-4af0f608" ComponentName="Pipe"/>
+    <PipingNetworkSegment ID="P-b800f5c4" ComponentName="Pipe"/>
+    <Valve ID="V-3c17ef8c" ComponentClass="GenericValve" ComponentName="HA-105">
+      <TagName>HA-105</TagName>
+      <ValveType>Gate_valve_NO</ValveType>
+      <NominalDiameter Value="4&quot;" Units="mm"/>
+      <Connection ID="C-cdd771f3"/>
+      <Connection ID="C-785c8201"/>
+    </Valve>
+    <Valve ID="V-c05024bc" ComponentClass="GenericValve" ComponentName="none">
+      <TagName>none</TagName>
+      <ValveType>Rotary_Valve</ValveType>
+      <NominalDiameter Value="none" Units="mm"/>
+      <Connection ID="C-f7d340e6"/>
+      <Connection ID="C-34bb094d"/>
+    </Valve>
+    <Valve ID="V-e1a35f2d" ComponentClass="GenericValve" ComponentName="none">
+      <TagName>none</TagName>
+      <ValveType>Ball_valve_NC</ValveType>
+      <NominalDiameter Value="none" Units="mm"/>
+      <Connection ID="C-5703e326"/>
+      <Connection ID="C-aa16349c"/>
+    </Valve>
+    <Valve ID="V-67c310ae" ComponentClass="GenericValve" ComponentName="D">
+      <TagName>D</TagName>
+      <ValveType>Rotary_Valve</ValveType>
+      <NominalDiameter Value="none" Units="mm"/>
+      <Connection ID="C-b1e151fc"/>
+      <Connection ID="C-f57df99d"/>
+    </Valve>
+    <Valve ID="V-184b68f7" ComponentClass="GenericValve" ComponentName="none">
+      <TagName>none</TagName>
+      <ValveType>Rotary_Valve</ValveType>
+      <NominalDiameter Value="none" Units="mm"/>
+      <Connection ID="C-83f22073"/>
+      <Connection ID="C-9157dfab"/>
+    </Valve>
+    <Valve ID="V-31531a19" ComponentClass="GenericValve" ComponentName="none">
+      <TagName>none</TagName>
+      <ValveType>Butterfly_Valve</ValveType>
+      <NominalDiameter Value="6&quot;" Units="mm"/>
+      <Connection ID="C-d98e87a7"/>
+      <Connection ID="C-5bdcde07"/>
+    </Valve>
+    <Valve ID="V-6bd1b3ef" ComponentClass="GenericValve" ComponentName="HA-108">
+      <TagName>HA-108</TagName>
+      <ValveType>Gate_valve_NO</ValveType>
+      <NominalDiameter Value="none" Units="mm"/>
+      <Connection ID="C-a67ff504"/>
+      <Connection ID="C-a7f3d47d"/>
+    </Valve>
+    <Valve ID="V-ffcd2152" ComponentClass="GenericValve" ComponentName="HA-108">
+      <TagName>HA-108</TagName>
+      <ValveType>Gate_Valve_NC</ValveType>
+      <NominalDiameter Value="10&quot;" Units="mm"/>
+      <Connection ID="C-2260bbb0"/>
+      <Connection ID="C-cdb34574"/>
+    </Valve>
+    <Valve ID="V-9e02b45a" ComponentClass="GenericValve" ComponentName="HA-102">
+      <TagName>HA-102</TagName>
+      <ValveType>Gate_valve_NO</ValveType>
+      <NominalDiameter Value="4&quot;" Units="mm"/>
+      <Connection ID="C-9b938d0d"/>
+      <Connection ID="C-b9bd3f27"/>
+    </Valve>
+    <Valve ID="V-98ff284a" ComponentClass="GenericValve" ComponentName="HA-101">
+      <TagName>HA-101</TagName>
+      <ValveType>Gate_Valve_NC</ValveType>
+      <NominalDiameter Value="6&quot;" Units="mm"/>
+      <Connection ID="C-438b9f66"/>
+      <Connection ID="C-c0802ef0"/>
+    </Valve>
+    <Valve ID="V-fcce8038" ComponentClass="GenericValve" ComponentName="HA-109">
+      <TagName>HA-109</TagName>
+      <ValveType>Gate_valve_NO</ValveType>
+      <NominalDiameter Value="none" Units="mm"/>
+      <Connection ID="C-aaab4045"/>
+      <Connection ID="C-e6d6d4ee"/>
+    </Valve>
+    <Valve ID="V-32ef0a6c" ComponentClass="GenericValve" ComponentName="HA-115">
+      <TagName>HA-115</TagName>
+      <ValveType>Gate_valve_NO</ValveType>
+      <NominalDiameter Value="6&quot;" Units="mm"/>
+      <Connection ID="C-145bc2d1"/>
+      <Connection ID="C-ec1052b5"/>
+    </Valve>
+    <Valve ID="V-0268f628" ComponentClass="GenericValve" ComponentName="HA-116">
+      <TagName>HA-116</TagName>
+      <ValveType>Gate_valve_NO</ValveType>
+      <NominalDiameter Value="6&quot;" Units="mm"/>
+      <Connection ID="C-5c5540d8"/>
+      <Connection ID="C-ae687c10"/>
+    </Valve>
+    <Valve ID="V-3d1e3c18" ComponentClass="GenericValve" ComponentName="1CS1S">
+      <TagName>1CS1S</TagName>
+      <ValveType>Gate_valve_NO</ValveType>
+      <NominalDiameter Value="6&quot;" Units="mm"/>
+      <Connection ID="C-81661c43"/>
+      <Connection ID="C-8cb07f7b"/>
+    </Valve>
+    <Valve ID="V-8995a0b9" ComponentClass="GenericValve" ComponentName="FC">
+      <TagName>FC</TagName>
+      <ValveType>Gate_Valve_NC</ValveType>
+      <NominalDiameter Value="10&quot;" Units="mm"/>
+      <Connection ID="C-c3fd80a4"/>
+      <Connection ID="C-99450403"/>
+    </Valve>
+    <Valve ID="V-6f4312bd" ComponentClass="GenericValve" ComponentName="HA-101">
+      <TagName>HA-101</TagName>
+      <ValveType>Gate_Valve_NC</ValveType>
+      <NominalDiameter Value="6&quot;" Units="mm"/>
+      <Connection ID="C-c2281a06"/>
+      <Connection ID="C-eee77ff9"/>
+    </Valve>
+    <Valve ID="V-10a24603" ComponentClass="GenericValve" ComponentName="HA-103">
+      <TagName>HA-103</TagName>
+      <ValveType>Gate_Valve_NC</ValveType>
+      <NominalDiameter Value="6&quot;" Units="mm"/>
+      <Connection ID="C-2951df8e"/>
+      <Connection ID="C-abf44c1f"/>
+    </Valve>
+    <Valve ID="V-468cf1bb" ComponentClass="GenericValve" ComponentName="FC">
+      <TagName>FC</TagName>
+      <ValveType>Rotary_Valve</ValveType>
+      <NominalDiameter Value="none" Units="mm"/>
+      <Connection ID="C-f9a3c32f"/>
+      <Connection ID="C-9248c35d"/>
+    </Valve>
+    <Valve ID="V-60abf0b5" ComponentClass="GenericValve" ComponentName="HC">
+      <TagName>HC</TagName>
+      <ValveType>Gate_Valve_NC</ValveType>
+      <NominalDiameter Value="8&quot;" Units="mm"/>
+      <Connection ID="C-c804b15e"/>
+      <Connection ID="C-1c14f446"/>
+    </Valve>
+    <Valve ID="V-c6f78fdb" ComponentClass="GenericValve" ComponentName="none">
+      <TagName>none</TagName>
+      <ValveType>Gate_Valve_NC</ValveType>
+      <NominalDiameter Value="8&quot;" Units="mm"/>
+      <Connection ID="C-ccda4cd6"/>
+      <Connection ID="C-75b69dd8"/>
+    </Valve>
+    <Valve ID="V-7e0f9408" ComponentClass="GenericValve" ComponentName="none">
+      <TagName>none</TagName>
+      <ValveType>Butterfly_Valve</ValveType>
+      <NominalDiameter Value="6x8&quot;" Units="mm"/>
+      <Connection ID="C-91bb7b23"/>
+      <Connection ID="C-d69cca09"/>
+    </Valve>
+    <Valve ID="V-20ca54ff" ComponentClass="GenericValve" ComponentName="10116">
+      <TagName>10116</TagName>
+      <ValveType>Gate_valve_NO</ValveType>
+      <NominalDiameter Value="none" Units="mm"/>
+      <Connection ID="C-33b55e06"/>
+      <Connection ID="C-6a0c2bfd"/>
+    </Valve>
+    <Valve ID="V-27660e51" ComponentClass="GenericValve" ComponentName="HA-166">
+      <TagName>HA-166</TagName>
+      <ValveType>Gate_valve_NO</ValveType>
+      <NominalDiameter Value="8&quot;" Units="mm"/>
+      <Connection ID="C-1a23377a"/>
+      <Connection ID="C-19a87dd1"/>
+    </Valve>
+    <Valve ID="V-a4202ae8" ComponentClass="GenericValve" ComponentName="none">
+      <TagName>none</TagName>
+      <ValveType>Gate_Valve_NC</ValveType>
+      <NominalDiameter Value="none" Units="mm"/>
+      <Connection ID="C-2854cf26"/>
+      <Connection ID="C-6cd43642"/>
+    </Valve>
+    <Valve ID="V-7b38220f" ComponentClass="GenericValve" ComponentName="none">
+      <TagName>none</TagName>
+      <ValveType>Gate_valve_NO</ValveType>
+      <NominalDiameter Value="none" Units="mm"/>
+      <Connection ID="C-73c192e8"/>
+      <Connection ID="C-687b3445"/>
+    </Valve>
+    <Valve ID="V-50a560ce" ComponentClass="GenericValve" ComponentName="none">
+      <TagName>none</TagName>
+      <ValveType>Check_Valve</ValveType>
+      <NominalDiameter Value="none" Units="mm"/>
+      <Connection ID="C-55135630"/>
+      <Connection ID="C-578e0f52"/>
+    </Valve>
+    <Valve ID="V-6633c356" ComponentClass="GenericValve" ComponentName="1CS1S01">
+      <TagName>1CS1S01</TagName>
+      <ValveType>Gate_Valve_NC</ValveType>
+      <NominalDiameter Value="6&quot;" Units="mm"/>
+      <Connection ID="C-613eaeb7"/>
+      <Connection ID="C-a9b6a4f1"/>
+    </Valve>
+    <Valve ID="V-40972a9d" ComponentClass="GenericValve" ComponentName="HA-135">
+      <TagName>HA-135</TagName>
+      <ValveType>Gate_Valve_NC</ValveType>
+      <NominalDiameter Value="2&quot;" Units="mm"/>
+      <Connection ID="C-00e8182a"/>
+      <Connection ID="C-b607834e"/>
+    </Valve>
+    <Valve ID="V-cdb400e9" ComponentClass="GenericValve" ComponentName="HA-120">
+      <TagName>HA-120</TagName>
+      <ValveType>Gate_valve_NO</ValveType>
+      <NominalDiameter Value="3&quot;" Units="mm"/>
+      <Connection ID="C-45b26799"/>
+      <Connection ID="C-18200665"/>
+    </Valve>
+    <Valve ID="V-26baa3c0" ComponentClass="GenericValve" ComponentName="HA-112">
+      <TagName>HA-112</TagName>
+      <ValveType>Globle_valve_NC</ValveType>
+      <NominalDiameter Value="6&quot;" Units="mm"/>
+      <Connection ID="C-68ac14d0"/>
+      <Connection ID="C-db3c3eca"/>
+    </Valve>
+    <Valve ID="V-a060d817" ComponentClass="GenericValve" ComponentName="A-117">
+      <TagName>A-117</TagName>
+      <ValveType>Gate_Valve_NC</ValveType>
+      <NominalDiameter Value="6&quot;" Units="mm"/>
+      <Connection ID="C-94dcfd01"/>
+      <Connection ID="C-84885563"/>
+    </Valve>
+    <Valve ID="V-2e2b3f64" ComponentClass="GenericValve" ComponentName="none">
+      <TagName>none</TagName>
+      <ValveType>Gate_Valve_NC</ValveType>
+      <NominalDiameter Value="none" Units="mm"/>
+      <Connection ID="C-2feafa35"/>
+      <Connection ID="C-67fea897"/>
+    </Valve>
+    <Valve ID="V-8369ef73" ComponentClass="GenericValve" ComponentName="HA-122">
+      <TagName>HA-122</TagName>
+      <ValveType>Gate_Valve_NC</ValveType>
+      <NominalDiameter Value="2&quot;" Units="mm"/>
+      <Connection ID="C-94c03867"/>
+      <Connection ID="C-46c7160b"/>
+    </Valve>
+    <Valve ID="V-1c7e8f3d" ComponentClass="GenericValve" ComponentName="HA-117">
+      <TagName>HA-117</TagName>
+      <ValveType>Gate_valve_NO</ValveType>
+      <NominalDiameter Value="6&quot;" Units="mm"/>
+      <Connection ID="C-7f878bbc"/>
+      <Connection ID="C-ebe77f86"/>
+    </Valve>
+    <Valve ID="V-18e42096" ComponentClass="GenericValve" ComponentName="HA-119">
+      <TagName>HA-119</TagName>
+      <ValveType>Gate_valve_NO</ValveType>
+      <NominalDiameter Value="3&quot;" Units="mm"/>
+      <Connection ID="C-e649942f"/>
+      <Connection ID="C-0e6c7ba0"/>
+    </Valve>
+    <Valve ID="V-9c8d8738" ComponentClass="GenericValve" ComponentName="HA-162">
+      <TagName>HA-162</TagName>
+      <ValveType>Butterfly_Valve</ValveType>
+      <NominalDiameter Value="6&quot;x8&quot;" Units="mm"/>
+      <Connection ID="C-64547320"/>
+      <Connection ID="C-d5cfbd4e"/>
+    </Valve>
+    <Valve ID="V-18017d75" ComponentClass="GenericValve" ComponentName="HA-1008">
+      <TagName>HA-1008</TagName>
+      <ValveType>Gate_Valve_NC</ValveType>
+      <NominalDiameter Value="8&quot;" Units="mm"/>
+      <Connection ID="C-8694773b"/>
+      <Connection ID="C-fe3ee611"/>
+    </Valve>
+    <Valve ID="V-645ac62e" ComponentClass="GenericValve" ComponentName="HA-140">
+      <TagName>HA-140</TagName>
+      <ValveType>Gate_valve_NO</ValveType>
+      <NominalDiameter Value="none" Units="mm"/>
+      <Connection ID="C-13062e06"/>
+      <Connection ID="C-352d4b60"/>
+    </Valve>
+    <Valve ID="V-81e78f16" ComponentClass="GenericValve" ComponentName="none">
+      <TagName>none</TagName>
+      <ValveType>Gate_Valve_NC</ValveType>
+      <NominalDiameter Value="8&quot;" Units="mm"/>
+      <Connection ID="C-2b18bcd7"/>
+      <Connection ID="C-76aacb26"/>
+    </Valve>
+    <Valve ID="V-305c132a" ComponentClass="GenericValve" ComponentName="PI-1009">
+      <TagName>PI-1009</TagName>
+      <ValveType>Gate_Valve_NC</ValveType>
+      <NominalDiameter Value="8&quot;" Units="mm"/>
+      <Connection ID="C-c8e0293a"/>
+      <Connection ID="C-85110d0d"/>
+    </Valve>
+    <Valve ID="V-9d1fd7f7" ComponentClass="GenericValve" ComponentName="HA-136">
+      <TagName>HA-136</TagName>
+      <ValveType>Gate_valve_NO</ValveType>
+      <NominalDiameter Value="10&quot;" Units="mm"/>
+      <Connection ID="C-b242cbe1"/>
+      <Connection ID="C-4eed875e"/>
+    </Valve>
+    <Valve ID="V-3cc51796" ComponentClass="GenericValve" ComponentName="HA-141">
+      <TagName>HA-141</TagName>
+      <ValveType>Gate_valve_NO</ValveType>
+      <NominalDiameter Value="none" Units="mm"/>
+      <Connection ID="C-4b83d78b"/>
+      <Connection ID="C-0f513a0b"/>
+    </Valve>
+    <Valve ID="V-54e63c0f" ComponentClass="GenericValve" ComponentName="HA-162">
+      <TagName>HA-162</TagName>
+      <ValveType>Gate_valve_NO</ValveType>
+      <NominalDiameter Value="8&quot;" Units="mm"/>
+      <Connection ID="C-33dc9110"/>
+      <Connection ID="C-3fbecd89"/>
+    </Valve>
+    <Valve ID="V-d450d97b" ComponentClass="GenericValve" ComponentName="HA-163">
+      <TagName>HA-163</TagName>
+      <ValveType>Gate_valve_NO</ValveType>
+      <NominalDiameter Value="8&quot;" Units="mm"/>
+      <Connection ID="C-03e34d4e"/>
+      <Connection ID="C-582d77fc"/>
+    </Valve>
+    <Valve ID="V-75adfc8a" ComponentClass="GenericValve" ComponentName="HA-137">
+      <TagName>HA-137</TagName>
+      <ValveType>Gate_valve_NO</ValveType>
+      <NominalDiameter Value="10&quot;" Units="mm"/>
+      <Connection ID="C-f454d52b"/>
+      <Connection ID="C-b7cef48f"/>
+    </Valve>
+    <Instrument ID="I-608f39e7" ComponentClass="GenericInstrument" ComponentName="FLOW-7">
+      <TagName>FLOW-7</TagName>
+      <InstrumentType>Instrument_Panel</InstrumentType>
+    </Instrument>
+    <Instrument ID="I-f43de7c1" ComponentClass="GenericInstrument" ComponentName="FI-10015">
+      <TagName>FI-10015</TagName>
+      <InstrumentType>Instrument_Panel</InstrumentType>
+    </Instrument>
+    <Instrument ID="I-f3ba6b70" ComponentClass="GenericInstrument" ComponentName="HS-10018">
+      <TagName>HS-10018</TagName>
+      <InstrumentType>Instrument_Panel</InstrumentType>
+    </Instrument>
+    <Instrument ID="I-ddd684ab" ComponentClass="GenericInstrument" ComponentName="PI-1008">
+      <TagName>PI-1008</TagName>
+      <InstrumentType>Instrument_Field</InstrumentType>
+    </Instrument>
+    <Instrument ID="I-8c785ce7" ComponentClass="GenericInstrument" ComponentName="PI-1009">
+      <TagName>PI-1009</TagName>
+      <InstrumentType>Instrument_Field</InstrumentType>
+    </Instrument>
+  </PlantStructure>
+  <Drawing ID="DRW-d659f3e8">
+    <DrawingNumber>P-32767</DrawingNumber>
+    <DrawingName>DynEngSys_PID_Demo</DrawingName>
+    <DrawingDate>
+      <Date>2021</Date>
+    </DrawingDate>
+    <Creator>
+      <Name>peter</Name>
+    </Creator>
+  </Drawing>
+</PlantModel>
